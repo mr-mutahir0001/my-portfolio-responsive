@@ -9,6 +9,10 @@
       "Courier New", monospace;
     --color-orange-400: oklch(75% 0.183 55.934);
     --color-orange-600: oklch(64.6% 0.222 41.116);
+    --color-amber-300: oklch(87.9% 0.169 91.605);
+    --color-amber-700: oklch(55.5% 0.163 48.998);
+    --color-amber-800: oklch(47.3% 0.137 46.201);
+    --color-amber-900: oklch(41.4% 0.112 45.904);
     --color-yellow-400: oklch(85.2% 0.199 91.936);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-600: oklch(54.6% 0.245 262.881);
@@ -189,11 +193,20 @@
   .absolute {
     position: absolute;
   }
+  .fixed {
+    position: fixed;
+  }
   .relative {
     position: relative;
   }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
   .top-4 {
     top: calc(var(--spacing) * 4);
+  }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
   }
   .left-4 {
     left: calc(var(--spacing) * 4);
@@ -204,11 +217,23 @@
   .z-10 {
     z-index: 10;
   }
+  .z-50 {
+    z-index: 50;
+  }
   .row-span-4 {
     grid-row: span 4 / span 4;
   }
+  .mx-3 {
+    margin-inline: calc(var(--spacing) * 3);
+  }
   .my-4 {
     margin-block: calc(var(--spacing) * 4);
+  }
+  .my-5 {
+    margin-block: calc(var(--spacing) * 5);
+  }
+  .my-10 {
+    margin-block: calc(var(--spacing) * 10);
   }
   .ms-2 {
     margin-inline-start: calc(var(--spacing) * 2);
@@ -233,6 +258,9 @@
   }
   .mt-15 {
     margin-top: calc(var(--spacing) * 15);
+  }
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
   }
   .flex {
     display: flex;
@@ -278,6 +306,9 @@
   }
   .w-16 {
     width: calc(var(--spacing) * 16);
+  }
+  .w-100 {
+    width: calc(var(--spacing) * 100);
   }
   .w-\[70\%\] {
     width: 70%;
@@ -352,6 +383,9 @@
       margin-inline-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-x-reverse)));
     }
   }
+  .overflow-hidden {
+    overflow: hidden;
+  }
   .rounded {
     border-radius: 0.25rem;
   }
@@ -383,6 +417,18 @@
   }
   .border-\[\#989899\] {
     border-color: #989899;
+  }
+  .border-amber-300 {
+    border-color: var(--color-amber-300);
+  }
+  .border-amber-700 {
+    border-color: var(--color-amber-700);
+  }
+  .border-amber-800 {
+    border-color: var(--color-amber-800);
+  }
+  .border-amber-900 {
+    border-color: var(--color-amber-900);
   }
   .border-gray-300 {
     border-color: var(--color-gray-300);
